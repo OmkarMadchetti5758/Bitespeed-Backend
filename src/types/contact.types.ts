@@ -1,4 +1,4 @@
-import { Contact } from '../generated/prisma';
+import { Contact } from '../generated/prisma/client';
 
 export type { Contact };
 
