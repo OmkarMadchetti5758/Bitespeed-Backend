@@ -1,13 +1,6 @@
-export interface Contact {
-  id: number;
-  phoneNumber: string | null;
-  email: string | null;
-  linkedId: number | null;
-  linkPrecedence: "primary" | "secondary";
-  createdAt: Date;
-  updatedAt: Date;
-  deletedAt: Date | null;
-}
+import { Contact } from '../generated/prisma';
+
+export type { Contact };
 
 export interface IdentifyRequest {
   email?: string;
@@ -16,9 +9,9 @@ export interface IdentifyRequest {
 
 export interface IdentifyResponse {
   contact: {
-    primaryContactId: number;
+    primaryContatctId: number;
     emails: string[];
-    phoneNumber: string[];
-    secondaryContactIds: string[];
+    phoneNumbers: string[];
+    secondaryContactIds: number[];
   };
 }
