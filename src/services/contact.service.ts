@@ -80,7 +80,7 @@ export class ContactService {
 
     return {
       contact: {
-        primaryContatctId: truePrimary.id,
+        primaryContactId: truePrimary.id,
         emails,
         phoneNumbers,
         secondaryContactIds,
